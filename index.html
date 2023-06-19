@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="importmap">
+     {"imports": {"astring": "https://cdn.jsdelivr.net/npm/astring@latest/dist/astring.mjs",
+                  "react": "./node_modules/.vite/deps/react.js",
+                  "react-dom": "./node_modules/.vite/deps/react-dom.js",
+                  "solid-js": "/node_modules/solid-js/dist/solid.js",
+                  "solid-js/web": "/node_modules/solid-js/web/dist/web.js"
+     }}
+    </script>
+    <!-- /* "react": "./node_modules/react/umd/react.development.js", */
+         /* "react-dom": "./node_modules/react-dom/umd/react-dom.development.js", */ -->
+    <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/piglet-lang@latest/lib/piglet/browser/main.mjs"></script> -->
+    <script type="module" src="http://127.0.0.1:9999/lib/piglet/browser/main.mjs"></script>
+    <script type="piglet">
+     (load-package ".")
+    </script>
+    <script type="piglet" src="./src/core.pig"></script>
+    <!-- <script type="module">
+         /* import React from "https://unpkg.com/react@18/umd/react.development.js"; */
+         import { createElement } from 'react'
+         import ReactDOM from 'react-dom'
+         console.log("Hello")
+         let x = createElement('div', {}, 'Hello')
+         console.log("Hello")
+         console.log(x)
+         ReactDOM.createRoot(document.getElementById('app')).render(
+         x
+         )
+         </script> -->
+    <!-- <script type="module" src="./src/app.js"></script> -->
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="solid-app"></div>
+  </body>
+</html>
